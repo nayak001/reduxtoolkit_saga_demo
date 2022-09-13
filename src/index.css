@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.active {
+  padding: 10px;
+  color: greenyellow;
+  background-color: #3b3bea;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login_container {
+  height: 400px;
+  margin: 0 15% 0 15%;
+}
+
+.page_container {
+  margin: 2% 10% 0 10%;
+}

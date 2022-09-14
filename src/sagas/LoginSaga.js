@@ -5,9 +5,19 @@ function* authenticateUserAsync(action) {
   console.log("######### Here: ");
   try {
     const res = yield call(authenticateUserApi, action.payload);
+    console.log("#########res.data: ", res.data);
     yield put(login_end(res.data));
+
+    // dummy
+    /*
+      status:"active",
+      success:"success",
+      userid:"admin@thinkzone.in",
+      username:"ThinkZone Admin",
+      usertype:"admin"
+    */
   } catch (err) {
-    console.log("#########: ", err.message);
+    console.log("######### error: ", err.message);
   }
 }
 function* LoginSaga() {
